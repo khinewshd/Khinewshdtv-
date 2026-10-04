@@ -1,0 +1,6 @@
+{
+  "name": "KHI NEWS HD TV",
+  "description": "Multilingual digital newsroom and broadcast CMS for KHI NEWS HD TV Karachi. Features one-click publishing across Urdu, English, and Arabic, AI translation and social syndication, and real-time breaking news.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

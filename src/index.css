@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
+    --font-arabic: 'Noto Sans Arabic', 'Tajawal', sans-serif;
+    --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  [dir="rtl"] {
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  line-height: 2.1;
+}
+
+.font-urdu-headline {
+  font-family: var(--font-urdu);
+  line-height: 1.85;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+  line-height: 1.7;
+}
+
+.font-latin {
+  font-family: var(--font-latin);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-rtl {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-marquee-rtl {
+  display: flex;
+  width: max-content;
+  animation: marquee-rtl 40s linear infinite;
+}
+
+.animate-marquee-rtl:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-ltr {
+  display: flex;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee-ltr:hover {
+  animation-play-state: paused;
+}
+
